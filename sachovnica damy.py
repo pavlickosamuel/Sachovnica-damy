@@ -11,6 +11,7 @@ def create_Image():
             if (x+y) % 400 == 0:
                 draw.rectangle([x, y, x+200, y+200], fill="white")
     img.save(f"riesenie{counter}.png")
+    
 def create_chessboard():
     global chessboard  
     #chessboard = [row] * 8 - toto nerob
