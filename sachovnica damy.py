@@ -4,12 +4,12 @@ chessboard = []
 counter = 0
 
 def create_Image():
-    img = Image.new("RGB", (1600, 1600), "white")
+    img = Image.new("RGB", (1600, 1600), "black")
     draw = ImageDraw.ImageDraw(img) 
     for x in range(0, 1601, 200):
         for y in range(0, 1601, 200):
             if (x+y) % 400 == 0:
-                draw.rectangle([x, y, x+200, y+200], fill="black")
+                draw.rectangle([x, y, x+200, y+200], fill="white")
     img.save(f"riesenie{counter}.png")
 def create_chessboard():
     global chessboard  
